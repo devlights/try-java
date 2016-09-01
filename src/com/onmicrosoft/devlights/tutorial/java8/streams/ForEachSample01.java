@@ -1,4 +1,4 @@
-package com.onmicrosoft.devlights.tutorial.java8.stream;
+package com.onmicrosoft.devlights.tutorial.java8.streams;
 
 import java.util.Arrays;
 import java.util.List;
