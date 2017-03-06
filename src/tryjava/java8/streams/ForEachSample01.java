@@ -1,4 +1,4 @@
-package com.onmicrosoft.devlights.tutorial.java8.streams;
+package tryjava.java8.streams;
 
 import java.util.Arrays;
 import java.util.List;
@@ -7,13 +7,13 @@ import java.util.List;
  * StreamのforEachの動作確認を行います。
  * @author devlights
  */
-public class ForEachSample01 {
+class ForEachSample01 {
 
     public static void main(String[] args) {
-        makeNumbers().stream().forEach(item -> System.out.println(item));
+        makeNumbers().forEach(System.out::println);
     }
 
-    static List<Integer> makeNumbers() {
+    private static List<Integer> makeNumbers() {
         return Arrays.asList(1, 2, 3, 4, 5);
     }
 }

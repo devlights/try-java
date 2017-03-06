@@ -1,4 +1,4 @@
-package com.onmicrosoft.devlights.tutorial.basic;
+package tryjava.basic;
 
 // Java 5から静的importが追加された
 import static java.lang.System.out;
@@ -7,7 +7,7 @@ import static java.lang.System.out;
  * HelloWorldプログラムです。
  * @author devlights
  */
-public class HelloWorld {
+class HelloWorld {
 
     public static void main(String[] args) {
 
