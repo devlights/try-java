@@ -1,2 +1,3 @@
 # try-java
-Javaの勉強用リポジトリ
+
+My Java tutorial project (<=java 1.8).
