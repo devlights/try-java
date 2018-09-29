@@ -10,8 +10,7 @@ import static java.lang.System.out;
 class HelloWorld {
 
     public static void main(String[] args) {
-
-        String message = "Hello world";
+        var message = "Hello world";
         out.println(message);
     }
 }
