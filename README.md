@@ -1,3 +1,3 @@
 # try-java
 
-My Java tutorial project (<=java 1.8).
+My Java tutorial project (<=java 11).
