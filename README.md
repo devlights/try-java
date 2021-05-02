@@ -5,3 +5,9 @@
 
 
 This is my TUTORIAL project for Java.
+
+# How to run
+
+```sh
+$ make
+```
