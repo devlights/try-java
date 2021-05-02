@@ -14,3 +14,6 @@ hs_err_pid*
 # Jetbrains config files
 *.iml
 .idea/
+
+# Eclipse theia config files
+.theia/
