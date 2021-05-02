@@ -7,6 +7,7 @@ public final class Builder {
         var mapper = new DefaultMapper();
 
         (new com.github.devlights.tryjava.basic.helloworld.Examples()).regist(mapper);
+        (new com.github.devlights.tryjava.basic.fileio.Examples()).regist(mapper);
 
         return mapper;
     }

@@ -2,6 +2,7 @@ package com.github.devlights.tryjava;
 
 import java.util.Scanner;
 
+import com.github.devlights.tryjava.exceptions.ExampleFailedException;
 import com.github.devlights.tryjava.interfaces.Mapper;
 import com.github.devlights.tryjava.mapping.Builder;
 
@@ -19,8 +20,10 @@ public class App {
             return;
         }
 
-        if (!target.execute()) {
-            System.err.println("Error!");
+        try {
+            target.execute();
+        } catch (ExampleFailedException failed) {
+            System.err.println(failed.getMessage());            
         }
     }
 
