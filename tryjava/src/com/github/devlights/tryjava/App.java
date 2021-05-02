@@ -1,25 +1,24 @@
 package com.github.devlights.tryjava;
 
-import java.util.Map;
 import java.util.Scanner;
 
-import com.github.devlights.tryjava.interfaces.Example;
+import com.github.devlights.tryjava.interfaces.Mapper;
 import com.github.devlights.tryjava.mapping.Builder;
 
 public class App {
 
-    Map<String, Example> mappings;
+    Mapper mapper;
 
     public App() {
-        this.mappings = Builder.build();
+        this.mapper = Builder.build();
     }
 
     public void run(String name) {
-        if (!this.mappings.containsKey(name)) {
+        var target = this.mapper.get(name);
+        if (target == null) {
             return;
         }
 
-        var target = this.mappings.get(name);
         if (!target.execute()) {
             System.err.println("Error!");
         }

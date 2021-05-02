@@ -1,12 +1,13 @@
 package com.github.devlights.tryjava.mapping;
 
-import java.util.Map;
-
-import com.github.devlights.tryjava.basic.helloworld.HelloWorld;
-import com.github.devlights.tryjava.interfaces.Example;
+import com.github.devlights.tryjava.interfaces.Mapper;
 
 public final class Builder {
-    public static Map<String, Example> build() {
-        return Map.of("helloworld", new HelloWorld());
+    public static Mapper build() {
+        var mapper = new DefaultMapper();
+
+        (new com.github.devlights.tryjava.basic.helloworld.Examples()).regist(mapper);
+
+        return mapper;
     }
 }
