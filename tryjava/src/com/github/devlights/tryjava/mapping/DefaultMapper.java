@@ -2,6 +2,7 @@ package com.github.devlights.tryjava.mapping;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 import com.github.devlights.tryjava.interfaces.Example;
 import com.github.devlights.tryjava.interfaces.Mapper;
@@ -30,6 +31,11 @@ public final class DefaultMapper implements Mapper {
         }
 
         this.mappings.put(name, target);
+    }
+
+    @Override
+    public Set<String> keys() {
+        return this.mappings.keySet();
     }
 
 }
