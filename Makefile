@@ -9,7 +9,7 @@ clean:
 	rm -rf tryjava/bin
 	mkdir -p tryjava/bin
 
-build: clean
+build:
 	@echo '|---------- BUILD ----------|'
 	javac -d tryjava/bin -cp tryjava/src tryjava/src/com/github/devlights/tryjava/App.java
 
