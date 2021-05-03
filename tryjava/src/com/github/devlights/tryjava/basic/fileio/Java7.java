@@ -9,7 +9,7 @@ import com.github.devlights.tryjava.exceptions.ExampleFailedException;
 import com.github.devlights.tryjava.interfaces.Example;
 
 /**
- * Java 1.7 〜 のファイル読み込みのサンプルです。
+ * Java 7 のファイル読み込みのサンプルです。
  * 
  * REFERENCES:
  *   - https://qiita.com/YujiSoftware/items/5975c0a93f5e58f6b9cf
