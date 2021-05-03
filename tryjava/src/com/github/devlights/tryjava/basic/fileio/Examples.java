@@ -7,7 +7,8 @@ public final class Examples implements Register {
 
     @Override
     public void regist(Mapper mapper) {
-        mapper.set("fileio_14_before", new Java14Before());
-        mapper.set("fileio_14", new Java14());
+        mapper.set("fileio_6_before", new Java6Before());
+        mapper.set("fileio_6", new Java6());
+        mapper.set("fileio_7", new Java7());
     }
 }
