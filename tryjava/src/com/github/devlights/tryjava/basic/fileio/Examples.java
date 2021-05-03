@@ -11,5 +11,6 @@ public final class Examples implements Register {
         mapper.set("fileio_6", new Java6());
         mapper.set("fileio_7", new Java7());
         mapper.set("fileio_8", new Java8());
+        mapper.set("fileio_11", new Java11());
     }
 }

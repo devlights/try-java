@@ -19,10 +19,10 @@ public final class Java6Before implements Example {
 
     @Override
     public void execute() throws ExampleFailedException {
-        var f = new File(Const.FILE_PATH);
+        File f = new File(Const.FILE_PATH);
         if (!f.exists()) {
-            var message = String.format("file not found [%s]\n", Const.FILE_PATH);
-            var ex = new ExampleFailedException(message);
+            String message = String.format("file not found [%s]\n", Const.FILE_PATH);
+            ExampleFailedException ex = new ExampleFailedException(message);
             throw ex;
         }
 
@@ -38,14 +38,14 @@ public final class Java6Before implements Example {
                 System.out.println(line);
             }
         } catch (IOException ioEx) {
-            var ex = new ExampleFailedException(ioEx);
+            ExampleFailedException ex = new ExampleFailedException(ioEx);
             throw ex;
         } finally {
             if (reader != null) {
                 try {
                     reader.close();
                 } catch (IOException closeEx) {
-                    var ex = new ExampleFailedException(closeEx);
+                    ExampleFailedException ex = new ExampleFailedException(closeEx);
                     throw ex;
                 }
             }
