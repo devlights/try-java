@@ -8,6 +8,7 @@ public final class Builder {
 
         (new com.github.devlights.tryjava.basic.helloworld.Examples()).regist(mapper);
         (new com.github.devlights.tryjava.basic.fileio.Examples()).regist(mapper);
+        (new com.github.devlights.tryjava.basic.measure.elapsedtime.Examples()).regist(mapper);
 
         return mapper;
     }
