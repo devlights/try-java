@@ -5,24 +5,21 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.nio.charset.Charset;
 
 import com.github.devlights.tryjava.exceptions.ExampleFailedException;
 import com.github.devlights.tryjava.interfaces.Example;
 
 /**
- * Java 1.4 〜 1.5 のファイル読み込みのサンプルです。
+ * Java 1.1 〜 1.3 までのファイル読み込みのサンプルです。
  * 
  * REFERENCES:
  *   - https://qiita.com/YujiSoftware/items/5975c0a93f5e58f6b9cf
  */
-public final class Java14 implements Example {
+public final class Java6Before implements Example {
 
     @Override
     public void execute() throws ExampleFailedException {
         var f = new File(Const.FILE_PATH);
-        var c = Charset.forName("UTF-8");
-
         if (!f.exists()) {
             var message = String.format("file not found [%s]\n", Const.FILE_PATH);
             var ex = new ExampleFailedException(message);
@@ -34,9 +31,10 @@ public final class Java14 implements Example {
             reader = new BufferedReader(
                         new InputStreamReader(
                             new FileInputStream(f), 
-                            c));
+                            "UTF-8"));
             
-            for (String line = ""; line != null; line = reader.readLine()) {
+            String line;
+            while ((line = reader.readLine()) != null) {
                 System.out.println(line);
             }
         } catch (IOException ioEx) {
@@ -52,5 +50,5 @@ public final class Java14 implements Example {
                 }
             }
         }
-    }
+    }   
 }
