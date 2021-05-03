@@ -100,11 +100,8 @@ public class App implements Runner<String>, Finder<String, List<String>> {
                     continue;
                 }
 
-                if (candidates.size() == 1) {
-                    target = candidates.get(0);
-                }
-
-                app.run(target);
+                // There is only 1 candidate. Execute it.
+                app.run(candidates.get(0));
             }
         }
     }
