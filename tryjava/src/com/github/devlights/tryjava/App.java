@@ -102,6 +102,7 @@ public class App implements Runner<String>, Finder<String, List<String>> {
 
                 // There is only 1 candidate. Execute it.
                 app.run(candidates.get(0));
+                break;
             }
         }
     }
