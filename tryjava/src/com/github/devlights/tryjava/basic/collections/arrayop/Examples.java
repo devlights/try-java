@@ -13,6 +13,9 @@ public final class Examples implements Register {
         mapper.set("collections_array_illegal_index", new IllegalIndexAccess());
         mapper.set("collections_array_loop", new Loop());
         mapper.set("collections_array_copy", new Copy());
+        mapper.set("collections_array_sort", new Sort());
+        mapper.set("collections_array_tostring", new ToString());
+        mapper.set("collections_array_to_boxed_array", new Boxed());
     }
     
 }
