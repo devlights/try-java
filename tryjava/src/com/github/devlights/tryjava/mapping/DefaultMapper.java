@@ -17,11 +17,7 @@ public final class DefaultMapper implements Mapper {
 
     @Override
     public Example get(String name) {
-        if (!this.mappings.containsKey(name)) {
-            return null;
-        }
-
-        return this.mappings.get(name);
+        return this.mappings.getOrDefault(name, null);
     }
 
     @Override
