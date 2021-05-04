@@ -1,4 +1,4 @@
-package com.github.devlights.tryjava.basic.fileio;
+package com.github.devlights.tryjava.basic.fileio.fileread;
 
 import java.io.BufferedReader;
 import java.io.IOException;

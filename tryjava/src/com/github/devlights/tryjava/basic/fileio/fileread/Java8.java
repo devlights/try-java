@@ -1,4 +1,4 @@
-package com.github.devlights.tryjava.basic.fileio;
+package com.github.devlights.tryjava.basic.fileio.fileread;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -28,8 +28,8 @@ public final class Java8 implements Example {
         // Files.lines にて内部でオープンされているファイルは
         // stream が閉じる際にクローズされるようになっている.
         //
-        try (Stream<String> stream = Files.lines(Paths.get(Const.FILE_PATH))) {
-            stream.forEach(System.out::println);
+        try (Stream<String> lines = Files.lines(Paths.get(Const.FILE_PATH))) {
+            lines.forEach(System.out::println);
         } catch (IOException ioEx) {
             ExampleFailedException ex = new ExampleFailedException(ioEx);
             throw ex;

@@ -1,4 +1,4 @@
-package com.github.devlights.tryjava.basic.fileio;
+package com.github.devlights.tryjava.basic.fileio.fileread;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -23,8 +23,8 @@ public final class Java11 implements Example {
         //   - Java10から追加された型推論
         // などの細かい機能改善があり、更に見やすくなっている
         //
-        try (var stream = Files.lines(Path.of(Const.FILE_PATH))) {
-            stream.forEach(System.out::println);
+        try (var lines = Files.lines(Path.of(Const.FILE_PATH))) {
+            lines.forEach(System.out::println);
         } catch (IOException ioEx) {
             var ex = new ExampleFailedException(ioEx);
             throw ex;
