@@ -11,14 +11,14 @@ import com.github.devlights.tryjava.exceptions.ExampleFailedException;
 import com.github.devlights.tryjava.interfaces.Finder;
 import com.github.devlights.tryjava.interfaces.Mapper;
 import com.github.devlights.tryjava.interfaces.Runner;
-import com.github.devlights.tryjava.mapping.Builder;
+import com.github.devlights.tryjava.mapping.DefaultBuilder;
 
 public class App implements Runner<String>, Finder<String, List<String>> {
 
     Mapper mapper;
 
     public App() {
-        this.mapper = Builder.build();
+        this.mapper = new DefaultBuilder().build();
     }
 
     @Override
