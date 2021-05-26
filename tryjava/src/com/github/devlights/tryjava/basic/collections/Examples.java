@@ -7,7 +7,8 @@ public final class Examples implements Register {
 
     @Override
     public void regist(Mapper mapper) {
-        (new com.github.devlights.tryjava.basic.collections.arrayop.Examples()).regist(mapper);        
+        (new com.github.devlights.tryjava.basic.collections.arrayop.Examples()).regist(mapper);
+        (new com.github.devlights.tryjava.basic.collections.listop.Examples()).regist(mapper);
     }
     
 }
