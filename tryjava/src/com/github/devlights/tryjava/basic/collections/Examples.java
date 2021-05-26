@@ -9,6 +9,7 @@ public final class Examples implements Register {
     public void regist(Mapper mapper) {
         (new com.github.devlights.tryjava.basic.collections.arrayop.Examples()).regist(mapper);
         (new com.github.devlights.tryjava.basic.collections.listop.Examples()).regist(mapper);
+        (new com.github.devlights.tryjava.basic.collections.setop.Examples()).regist(mapper);
     }
     
 }
