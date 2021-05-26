@@ -7,7 +7,8 @@ public final class Examples implements Register {
 
     @Override
     public void regist(Mapper mapper) {
-        mapper.set("collections_set_create", new Create());        
+        mapper.set("collections_set_create", new Create());
+        mapper.set("collections_set_empty", new Empty());
     }
-    
+
 }
