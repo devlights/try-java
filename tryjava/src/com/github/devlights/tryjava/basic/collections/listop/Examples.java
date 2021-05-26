@@ -9,6 +9,7 @@ public final class Examples implements Register {
     public void regist(Mapper mapper) {
         mapper.set("collections_list_create", new Create());
         mapper.set("collections_list_empty", new Empty());
+        mapper.set("collections_list_add", new Add());
     }
     
 }
