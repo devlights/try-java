@@ -6,6 +6,10 @@ import java.util.List;
 import com.github.devlights.tryjava.exceptions.ExampleFailedException;
 import com.github.devlights.tryjava.interfaces.Example;
 
+/**
+ * リストについてのサンプルです. (空のリスト)
+ * 
+ */
 public final class Empty implements Example {
 
     @Override

@@ -6,6 +6,10 @@ import java.util.stream.IntStream;
 import com.github.devlights.tryjava.exceptions.ExampleFailedException;
 import com.github.devlights.tryjava.interfaces.Example;
 
+/**
+ * リストについてのサンプルです. (要素の追加)
+ * 
+ */
 public final class Add implements Example {
 
     @Override
