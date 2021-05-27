@@ -11,6 +11,7 @@ public final class Examples implements Register {
         mapper.set("collections_set_empty", new Empty());
         mapper.set("collections_set_add", new Add());
         mapper.set("collections_set_loop", new Loop());
+        mapper.set("collections_set_remove", new Remove());
     }
 
 }
