@@ -13,6 +13,7 @@ public final class Examples implements Register {
         mapper.set("collections_set_loop", new Loop());
         mapper.set("collections_set_remove", new Remove());
         mapper.set("collections_set_removeif", new RemoveIf());
+        mapper.set("collections_set_contains", new Contains());
     }
 
 }
