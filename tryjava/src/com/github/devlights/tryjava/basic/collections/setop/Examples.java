@@ -17,6 +17,7 @@ public final class Examples implements Register {
         mapper.set("collections_set_union", new Union());
         mapper.set("collections_set_difference", new Difference());
         mapper.set("collections_set_intersection", new Intersection());
+        mapper.set("collections_set_symmetric_difference", new SymmetricDifference());
     }
 
 }

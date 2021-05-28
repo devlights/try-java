@@ -7,7 +7,7 @@ import com.github.devlights.tryjava.exceptions.ExampleFailedException;
 import com.github.devlights.tryjava.interfaces.Example;
 
 /**
- * Set のサンプルです. (和集合 -- Union)
+ * Set のサンプルです. (対称差 -- Symmetric Difference)
  * 
  * <div>
  * <span>REFERENCE:</span>
@@ -18,20 +18,30 @@ import com.github.devlights.tryjava.interfaces.Example;
  * </ul>
  * </div>
  */
-public final class Union implements Example {
+public final class SymmetricDifference implements Example {
 
     @Override
     public void execute() throws ExampleFailedException {
         var s1 = Set.of("golang", "java");
         var s2 = Set.of("dotnet", "python", "java");
 
-        // Java の Set で 和集合 は addAll メソッドで生成できる
-        var union = new HashSet<String>();
+        // Java の Set で 対称差 は 以下のように複数のメソッドを呼び出して生成する
+        var symmetricDiff = new HashSet<String>();
 
-        union.addAll(s1);
-        union.addAll(s2);
+        // まず 和集合 を作る
+        symmetricDiff.addAll(s1);
+        symmetricDiff.addAll(s2);
 
-        union.forEach(System.out::println);
+        // 次に 積集合 を求める
+        var intersection = new HashSet<String>();
+
+        intersection.addAll(s1);
+        intersection.retainAll(s2);
+
+        // 最後に 上で求めた 積集合 を引く
+        symmetricDiff.removeAll(intersection);
+
+        symmetricDiff.forEach(System.out::println);
     }
 
 }

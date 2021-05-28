@@ -9,10 +9,14 @@ import com.github.devlights.tryjava.interfaces.Example;
 /**
  * Set のサンプルです. (積集合 -- Intersection)
  * 
- * REFERENCE:
- * https://stackoverflow.com/questions/393968/java-is-there-an-easy-quick-way-to-and-or-or-xor-together-sets
- * https://docs.oracle.com/javase/tutorial/collections/interfaces/set.html
- * https://www.atmarkit.co.jp/ait/articles/1906/25/news015_3.html
+ * <div>
+ * <span>REFERENCE:</span>
+ * <ul>
+ * <li> https://stackoverflow.com/questions/393968/java-is-there-an-easy-quick-way-to-and-or-or-xor-together-sets </li>
+ * <li> https://docs.oracle.com/javase/tutorial/collections/interfaces/set.html </li>
+ * <li> https://www.atmarkit.co.jp/ait/articles/1906/25/news015_3.html </li>
+ * </ul>
+ * </div>
  */
 public final class Intersection implements Example {
 
