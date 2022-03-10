@@ -1,4 +1,3 @@
-
 image: gitpod/workspace-java-17:latest
 tasks:
   - command: make build
